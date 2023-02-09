@@ -1,0 +1,139 @@
+@import '../../variables/variables.scss';
+.featured{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
+    gap: 12px;
+    color: $font-gray;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 2px 0px;
+        font-size: $font-size-lg;
+    }
+
+    .center{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        .progress{
+            width: 100px;
+            height: 100px;
+        }
+        .title{
+            margin: 3px 0px;
+            font-size: $font-size-md;
+        }
+        .amount{
+            font-size: $font-size-xlg;
+            color: $font-black;
+        }
+        .desc{
+            text-align: center;
+            font-size: $font-size-xsm;
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        font-size: $font-size-md;
+        .percent{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    // @media screen and (max-width: 920px){
+    // // background-color: red;
+    // padding: 20px 10px;
+    
+    // // flex-grow: 1;
+    // // flex: 3;
+    //  .top{
+    //  }
+    //  .center{
+    //      gap: 7px;
+    //      .progress{
+           
+    //      }
+    //      .title{
+    //          margin: 1px 0px;
+    //      }
+    //      .amount{
+    //      }
+    //      .desc{
+    //      }
+    //  }
+
+    //  .bottom{
+    //      .percent{        
+    //      }
+    //  }
+    //  }
+
+    // @media screen and (max-width: 992px){
+    //     min-height: 53vh;
+    //     background-color: blue;
+    //     flex: 2;
+    //     padding: 12px;
+    //     .top{
+    //         margin: 1px 0px;
+    //     }
+    //     .center{
+    //         .progress{
+    //            width: 70px;
+    //            height: 70px;
+    //         }
+    //         .title{
+    //         }
+    //         .amount{
+    //         }
+    //         .desc{
+    //         }
+    //     }
+    
+    //     .bottom{
+    //         .percent{        
+    //         }
+    //     }
+    // }
+
+     @media screen and (max-width: 700px){
+         
+         .top{
+             margin: 4px 0px;
+         }
+         .center{
+             .progress{
+                width: 67px;
+                height: 67px;
+             }
+             .title{
+                margin: 5px 0px;
+             }
+             .amount{
+                font-size: 28px;
+             }
+             .desc{
+                font-size: 14px;
+             }
+         }
+    
+         .bottom{
+             .percent{        
+             }
+         }
+     }
+}

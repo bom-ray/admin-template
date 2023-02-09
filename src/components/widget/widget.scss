@@ -1,0 +1,53 @@
+@import '../../variables/variables.scss';
+.widget{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
+    .left, .right{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: space-between;
+        .title{
+            color: $font-gray;
+            font-size: $font-size-lg;
+        }
+        .quantity{
+            font-size: $font-size-xlg;
+            color: $font-black;
+        }
+        .link{
+            border-bottom: $border-width;
+            font-size: $font-size-sm;
+            color: $font-black;
+        }
+        .percent{
+           &.positive{
+            color: blue
+           }
+           &.negative{
+            color: red
+           }
+        }
+    }
+    .right{
+         .top{
+             display: flex;
+            align-items: center;
+         }
+        .icon{
+            align-self: flex-end;
+            border-radius: 5px;
+         }
+     }
+
+     @media screen and (max-width: 992px){
+       max-width: max-content;
+       max-width: 300px;
+     }
+}

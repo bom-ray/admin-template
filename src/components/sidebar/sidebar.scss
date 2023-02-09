@@ -1,0 +1,59 @@
+@import '../../variables/variables.scss';
+.sidebar {
+    flex: 1;
+    padding-left: 10px;
+    color: $font-gray;
+    border-right: $border-width;
+    .top{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.3px solid rgb(228, 225, 225);
+        margin-bottom: 10px;
+        .logo {
+            color: $icon-logo;
+            font-size: $font-size-logo;
+        }
+    }
+
+    .center{
+        .title{
+            font-size: $font-size-md;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            color: $font-gray;
+            gap: 5px;
+            padding: 5px;
+            margin: 3px 0px;
+            font-size: $font-size-md;
+            .icon{
+                font-size:$icon-size;
+                color: $icon-color;
+            }
+        }
+    }
+
+    .bottom{
+        .themes{
+            display: flex;
+            align-items: center;
+            gap:4px;
+            padding: 8px;
+            .theme{
+                width: 20px;
+                height: 20px;
+                border-radius: 5px;
+                &:nth-child(1){
+                    background-color: blue;              
+                }         
+                &:nth-child(2){
+                    background-color: red;
+                } 
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../variables/variables.scss';
+.dataTable{
+    padding: 10px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        margin: 6px 0px;
+        border-bottom: $border-width;
+        // box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+        // -webkit-box-shadow: 2px 4px 10px 1px rgba(156, 154, 154, 0.47);
+        // -moz-box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.82);
+        .title{
+            font-size: $font-size-lg;
+            color: $font-gray;
+        }
+        .addbutton{
+            padding: $btn-border-padding;
+            border-radius: $border-radius;
+            border: $border-btn;
+            color: $add-btn-color;
+        }
+    }
+    .cellwrapper{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .status{
+            background-color: rgb(245, 234, 234);
+            &.active{
+                color: orange;
+                padding: 3px;
+                border-radius: 3px;
+            }
+            &.pending{
+                color: rgb(167, 45, 70);
+                padding: 3px;
+                border-radius: 3px;
+            }
+            &.passive{
+                color: green;
+                padding: 3px;
+                border-radius: 3px;
+            }
+        }
+        .view{
+            border-radius: 4px;
+            padding: 3px;
+            border: 0.1px solid lightblue;
+        }
+        .delete{
+            border-radius: 4px;
+            padding: 4px;
+            border: 0.1px solid crimson;
+        }
+    }
+}

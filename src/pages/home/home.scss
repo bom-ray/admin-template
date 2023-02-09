@@ -1,0 +1,51 @@
+@import '../../variables/variables.scss';
+.home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    .homeContainer{
+        flex: 5;
+       .widgets{
+        display: flex;
+        padding: 10px;
+        gap: 15px;
+        
+       }
+
+       .charts{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 4px 10px;
+    
+       }
+
+       .tableContainer{
+        margin-top: 5px;
+        padding: 10px;
+        span{
+            color: $font-gray;
+        }
+       }
+    }
+
+    @media screen and (max-width: 700px){
+        .homeContainer{
+            // flex-wrap: wrap;
+            // width: fit-content;
+            // flex-grow: inherit;
+            .widgets{
+                width: 70%;
+                
+            }
+            .charts{
+               width: 70%;
+            }
+            .tableContainer{
+                width: 70%;
+            }
+           
+        }
+        
+    }
+}
